@@ -11,7 +11,7 @@
         if (sessionActiva.getAttribute("sessionON") == null) {
             response.sendRedirect("/Calificaciones/login.html");
         }
-        if (sessionActiva.getAttribute("sessionROL") != "1") {
+        if (sessionActiva.getAttribute("sessionROL") != "0") {
             response.sendRedirect("/Calificaciones/error403.jsp");
         }
     %>
