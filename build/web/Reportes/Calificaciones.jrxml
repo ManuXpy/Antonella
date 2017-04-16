@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Calificaciones" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="896c2e2d-0c9d-4a56-b9e3-684ae2898e8e">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="ireport.callouts" value="##Wed Oct 05 15:58:24 PYST 2016"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab Data Text" hAlign="Center"/>
+	<style name="table 1">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 2_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 3_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table 4_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="a1b2ae87-e139-4195-a334-c6c4a1170c58"/>
+	<subDataset name="Table Dataset 2" uuid="a55dbd99-ceae-4e8f-9a8b-f796f062bf55"/>
+	<subDataset name="Table Dataset 3" uuid="74c8c755-2664-4bf9-bc59-ef2c99d50446"/>
+	<subDataset name="Table Dataset 4" uuid="f1b6d399-b68d-4840-886b-b90d73ebdc95"/>
+	<subDataset name="Table Dataset 5" uuid="22b29bf5-9720-4194-a639-eb094607b28a"/>
+	<parameter name="ci_alumno" class="java.lang.String">
+		<defaultValueExpression><![CDATA[ci_alumno]]></defaultValueExpression>
+	</parameter>
+	<parameter name="id_carrera" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[id_carrera]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT id_asignatura, ci_alumno , nombres_alumno, apellidos_alumno, descrip_anho, nombre_asignatura, nombre_carrera, puntaje_tp, puntaje_ep, puntaje_ef, puntaje_total
+FROM public.v_calificaciones  WHERE ci_alumno=$P{ci_alumno} AND id_carrera=$P{id_carrera}]]>
+	</queryString>
+	<field name="id_asignatura" class="java.lang.Integer"/>
+	<field name="ci_alumno" class="java.lang.String"/>
+	<field name="nombres_alumno" class="java.lang.String"/>
+	<field name="apellidos_alumno" class="java.lang.String"/>
+	<field name="descrip_anho" class="java.lang.String"/>
+	<field name="nombre_asignatura" class="java.lang.String"/>
+	<field name="nombre_carrera" class="java.lang.String"/>
+	<field name="puntaje_tp" class="java.lang.String"/>
+	<field name="puntaje_ep" class="java.lang.String"/>
+	<field name="puntaje_ef" class="java.lang.String"/>
+	<field name="puntaje_total" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="36" uuid="255d42d7-cc60-4e42-951c-762c6a181f6d"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Universidad Privada Del Este – Sede Asunción]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="36" width="555" height="20" uuid="cacdae24-ea10-48d3-9df1-692b7bbe9036"/>
+				<textElement textAlignment="Center">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Resumen de Calificaciones]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="68" width="555" height="1" uuid="4cd1775a-8a3d-4956-933b-69a020b4efa8"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="44" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="50" height="20" uuid="8c273c5c-c138-4255-b33d-b022f2d6f80b"/>
+				<text><![CDATA[Alumno:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="50" y="0" width="100" height="20" uuid="dd046ab2-d112-428a-80a7-6c5f350d299e"/>
+				<textFieldExpression><![CDATA[$F{nombres_alumno}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="24" width="50" height="20" uuid="840f66ce-21fb-41b3-b2ba-f50b627d4230"/>
+				<text><![CDATA[Carrera:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="50" y="24" width="100" height="20" uuid="7a64c937-f537-49fc-b467-49475ee61ad3"/>
+				<textFieldExpression><![CDATA[$F{nombre_carrera}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="150" y="0" width="100" height="20" uuid="f55e97b1-0284-4ac9-bf64-78e6aa51f58f"/>
+				<textFieldExpression><![CDATA[$F{apellidos_alumno}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="355" y="0" width="100" height="20" uuid="b50f1f84-5452-4ec7-aefc-fa8afd905967"/>
+				<text><![CDATA[Cedula de Identidad:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="455" y="0" width="100" height="20" uuid="2bf48122-00e7-407b-aa7b-649e87f937e5"/>
+				<textFieldExpression><![CDATA[$F{ci_alumno}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="355" y="24" width="100" height="20" uuid="58afeffb-418f-4f47-b40b-84b248baf4fb"/>
+				<text><![CDATA[Fecha Consulta:]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy HH.mm.ss">
+				<reportElement x="455" y="24" width="100" height="20" uuid="9a1a7dff-d058-4575-abb2-5da817a70c87"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="62" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="555" height="1" uuid="3f4cc7ac-695d-462c-9f08-6f59b39d40ad"/>
+			</line>
+			<staticText>
+				<reportElement x="100" y="20" width="100" height="20" uuid="526e1c73-779f-4c49-9f57-7c7990b4fc7d"/>
+				<text><![CDATA[Año]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="20" width="113" height="20" uuid="7ae91e0e-f865-4464-8816-e75022bfd868"/>
+				<text><![CDATA[Asignatura]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="326" y="20" width="100" height="20" uuid="9d26b9ae-2f81-44e5-8b07-078246e0f70e"/>
+				<text><![CDATA[Puntajes Obtenidos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="497" y="20" width="58" height="20" uuid="aaec0fbc-c34c-474a-b349-c98151e020d5"/>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="53" width="555" height="1" uuid="9ab1bef7-da5f-4cb5-8bb8-0a8092e29220"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="20" width="100" height="20" uuid="07885a3b-688b-4f79-b97a-a9c963d0f8fc"/>
+				<text><![CDATA[ID Asignatura]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="326" y="40" width="47" height="20" uuid="a53b0d8b-3af2-4276-996e-59222dd21a2a"/>
+				<text><![CDATA[TP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="373" y="40" width="47" height="20" uuid="049c80df-f763-4ddf-a076-729653b8191c"/>
+				<text><![CDATA[EP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="40" width="47" height="20" uuid="bb581587-24d2-4769-b23d-0347b975ef53"/>
+				<text><![CDATA[EF]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20" uuid="24e11d28-f38d-4a9d-a493-52a6ecb9b562"/>
+				<textFieldExpression><![CDATA[$F{id_asignatura}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="100" height="20" uuid="d1f98f07-481c-4c39-99ca-e2b0891562ed"/>
+				<textFieldExpression><![CDATA[$F{descrip_anho}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="0" width="81" height="20" uuid="1c2562dd-01e1-47dc-80d0-81743211652c"/>
+				<textFieldExpression><![CDATA[$F{nombre_asignatura}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="326" y="0" width="47" height="20" uuid="4e4dff6d-d308-480c-8f94-2936e636aa23"/>
+				<textFieldExpression><![CDATA[$F{puntaje_tp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="373" y="0" width="47" height="20" uuid="db70e370-8826-49a4-a39a-e4fc7ca6a596"/>
+				<textFieldExpression><![CDATA[$F{puntaje_ep}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="0" width="47" height="20" uuid="b14c6292-20fe-47cf-9f31-b6b35adff84c"/>
+				<textFieldExpression><![CDATA[$F{puntaje_ef}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="497" y="0" width="78" height="20" uuid="86d18830-306d-4612-925e-efd2cd64e5cf"/>
+				<textFieldExpression><![CDATA[$F{puntaje_total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="27" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="22" width="555" height="20" uuid="a5b4723f-3c64-4f29-8808-111a66050e95"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Este documento no podrá ser utilizado como documento académico válido.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="21" width="555" height="1" uuid="16a1fac0-12e2-4cb7-8b95-e6baae383fe2"/>
+			</line>
+		</band>
+	</summary>
+</jasperReport>

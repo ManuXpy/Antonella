@@ -1,0 +1,18 @@
+SMAP
+carreras_jsp.java
+JSP
+*S JSP
+*F
++ 0 carreras.jsp
+carreras.jsp
++ 1 menu.jsp
+menu.jsp
++ 2 alertas.jsp
+alertas.jsp
+*L
+5,32:50
+5#1,37:82
+36#0,3:118
+5#2,23:121
+38#0,78:143
+*E

@@ -1,0 +1,18 @@
+SMAP
+inicio_jsp.java
+JSP
+*S JSP
+*F
++ 0 inicio.jsp
+inicio.jsp
++ 1 menu.jsp
+menu.jsp
+*L
+5,8:49
+13:57,3
+14,17:60
+5#1,37:77
+30#0,8:113
+38:121,3
+39,125:124
+*E
