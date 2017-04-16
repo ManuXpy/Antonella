@@ -8,6 +8,7 @@
 * [jQuery](https://jquery.com/)
 * [HTML5](https://www.w3schools.com/html/)
 * [CSS3](https://www.w3schools.com/css/)
+* [Javascript](https://www.javascript.com/)
 * JavaEE - BackEnd
 
  ## _Administracion_
