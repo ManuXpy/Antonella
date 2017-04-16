@@ -149,7 +149,7 @@ public class PuntajesDAOIMPL implements PuntajesDAO {
                 allPuntajes.add(new PuntajesDTO(rs.getInt("t_asignatura_id_asignatura"),
                         rs.getInt("t_alumnos_id_alumno"),
                         rs.getInt("id_puntajes")));
-                       
+
             }
         } catch (SQLException ex) {
             MsmError = ex.getMessage();

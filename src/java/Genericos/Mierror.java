@@ -16,10 +16,10 @@ public class Mierror extends Throwable{
             case 2:
                 //programar la accion a seguir
                 break;
-            case 3: 
+            case 3:
                 //programar la accion a seguir
                 break;
         }
     }
-    
+
 }

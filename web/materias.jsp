@@ -25,7 +25,7 @@
         <script src="Recursos/js/bootstrap.js"></script>
         <script src="Recursos/js/jquery.backstretch.min.js"></script>
         <script src="Recursos/js/bootstrapValidator.js"></script>
-        <script src="Recursos/js/ImagenFondo.js"></script> 
+        <script src="Recursos/js/ImagenFondo.js"></script>
         <script src="Recursos/js/bootstrap-datepicker.js"></script>
         <script src="Operaciones/OperacionesMaterias.js"></script>
         <script src="Recursos/js/Buscador.js"></script>
@@ -46,7 +46,7 @@
                     <legend>Materias</legend>
                     <!-- Text input-->
                     <div class="form-group">
-                        <label class="col-md-1 control-label" for="codigo">ID</label>  
+                        <label class="col-md-1 control-label" for="codigo">ID</label>
                         <div class="col-md-4">
                             <input id="codigo" name="codigo" type="text" placeholder="ID" class="form-control input-md" required=""  autofocus onkeydown="
                                     if (event.keyCode === 13) {
@@ -65,7 +65,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-1 control-label" for="materia">Materia</label>  
+                        <label class="col-md-1 control-label" for="materia">Materia</label>
                         <div class="col-md-4">
                             <input id="materia" name="materia" type="text" placeholder="Ingrese materia" class="form-control input-md" required="" >
                         </div>
@@ -75,7 +75,7 @@
                     <!-- Select Basic -->
                     <select id="usuario" name="usuario" class="form-control"  style="display:none">
                         <option value="${sessionScope.sessionON}">${sessionScope.sessionON}</option>
-                    </select> 
+                    </select>
 
                 </fieldset>
             </form>
@@ -105,18 +105,18 @@
                             </thead>
                             <tbody id="myTable" class="buscar">
                             </tbody>
-                        </table>  
+                        </table>
                         <nav>
                             <ul class="pager">
                                 <li class="previous">
                                     <a href="#">
-                                        <span aria-hidden="true">&larr;</span> 
+                                        <span aria-hidden="true">&larr;</span>
                                         Anterior
                                     </a>
                                 </li>
                                 <li class="next">
                                     <a href="#">
-                                        Siguiente 
+                                        Siguiente
                                         <span aria-hidden="true">&rarr;</span>
                                     </a>
                                 </li>
@@ -124,7 +124,7 @@
                         </nav>
                     </div>
                 </div>
-            </div>  
+            </div>
         </section>
         <script>
             document.getElementById('INSERTAR').disabled = true;

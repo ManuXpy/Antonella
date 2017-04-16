@@ -46,7 +46,9 @@ public class AccesoServlet extends HttpServlet {
         if (acceso.verificarUsuario(accesoDTO)) {
             HttpSession sessionActiva = request.getSession();
             String UsuarioLogueado = accesoDTO.getUsuario();
+            String UsuarioRol = "0";
             sessionActiva.setAttribute("sessionON", UsuarioLogueado);
+            sessionActiva.setAttribute("sessionROL", UsuarioRol);
 
             response.sendRedirect("/Calificaciones/inicio.jsp");
             System.out.println("verificacion exitosa de usuario");

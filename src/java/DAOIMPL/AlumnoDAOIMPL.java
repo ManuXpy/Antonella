@@ -52,7 +52,6 @@ public class AlumnoDAOIMPL implements AlumnoDAO {
                 out.println("el insert tuvo un fallo");
                 return false;
             }
-
         } catch (SQLException ex) {
             MsmError = ex.getMessage();
             out.println(MsmError);

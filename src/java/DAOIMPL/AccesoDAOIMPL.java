@@ -36,7 +36,7 @@ public class AccesoDAOIMPL implements AccesoDAO {
             preparedStatement = conexion.getConexion().prepareStatement(sintaxiSql);
             preparedStatement.setObject(1, accesoDTO.getUsuario());
             preparedStatement.setObject(2, accesoDTO.getPass());
-          
+
             resultado = preparedStatement.executeQuery();
             if (resultado.next()) {
 

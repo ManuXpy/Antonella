@@ -30,5 +30,3 @@
 
 
 <!-- parameters.put("ci_alumno", Integer.parseInt(request.getParameter("ci_alumno"))); --!>
-
-  

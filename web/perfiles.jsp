@@ -38,7 +38,7 @@
                     <legend>Perfiles</legend>
                     <!-- Text input-->
                     <div class="form-group">
-                        <label class="col-md-1 control-label" for="codigo">Codigo</label>  
+                        <label class="col-md-1 control-label" for="codigo">Codigo</label>
                         <div class="col-md-4">
                             <input id="codigo" name="codigo" type="text" placeholder="" class="form-control input-md" required="" onkeydown="
                                     if (event.keyCode === 13) {
@@ -50,7 +50,7 @@
                     </div>
                     <!-- Text input-->
                     <div class="form-group">
-                        <label class="col-md-1 control-label" for="descripcion">Tipo</label>  
+                        <label class="col-md-1 control-label" for="descripcion">Tipo</label>
                         <div class="col-md-4">
                             <input id="descripcion" name="descripcion" type="text" placeholder="Ingrese la descripcion" class="form-control input-md" required="" autofocus>
 
@@ -70,7 +70,7 @@
                 <span class="input-group-addon">Buscar</span>
                 <input id="filtrar" type="text" class="form-control" placeholder="Ingresa su busqueda...">
             </div>
-            <div class="table-responsive"> 
+            <div class="table-responsive">
                 <table class="table table-hover table-condensed" id="miTabla" onclick="recuperar()" >
                     <thead>
                         <tr class="info">
@@ -81,7 +81,7 @@
                     <tbody class="buscar">
                     </tbody>
                 </table>
-            </div>    
+            </div>
 
         </section>
     </body>

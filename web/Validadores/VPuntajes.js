@@ -51,8 +51,3 @@ function Puntajes() {
         $("#Exfinal").fadeOut(3000);
     }
 }
-
-
-
-
-        

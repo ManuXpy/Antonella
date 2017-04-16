@@ -30,12 +30,10 @@
     <strong>Atencion!</strong> El trabajo practico tiene una calificaion maxima de 20
 </div>
 
-
 <div class="alert alert-danger alert-dismissible text-center" style="display:none" id="Parcial" role="alert">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
     <strong>Atencion!</strong> El examen parcial tiene una calificaion maxima de 30
 </div>
-
 
 <div class="alert alert-danger alert-dismissible text-center" style="display:none" id="Exfinal" role="alert">
     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>

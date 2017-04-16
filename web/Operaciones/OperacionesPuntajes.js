@@ -86,7 +86,7 @@ function allPuntajes() {
         cache: false,
         success: function (resp) {
             $.each(resp, function (indice, value) {
-               
+
                 $("#miTabla").append($("<tr>").append($("<td>" + value.t_asignatura_id_asignatura + "</td>" +
                         "<td>" + value.t_alumnos_id_alumno + "</td>" +
                         "<td>" + value.id_puntajes + "</td>")));

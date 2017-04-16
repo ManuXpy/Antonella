@@ -31,10 +31,10 @@
                             <input  id="txtPassword" type="password" class="form-control" name="password" placeholder="Contraseña">
                             <span id="showPassword" class="input-group-btn">
                                 <button class="btn btn-default reveal" type="button"><i class="glyphicon glyphicon-eye-open"></i></button>
-                            </span>  
+                            </span>
                         </div>
                         <button class="btn btn-primary btn-block login-button" type="submit"><i class="fa fa-sign-in"></i>Entrar</button>
-                    </form>			
+                    </form>
                 </div>
             </div>
         </div>

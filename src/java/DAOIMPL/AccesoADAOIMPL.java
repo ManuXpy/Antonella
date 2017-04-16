@@ -69,6 +69,7 @@ public class AccesoADAOIMPL implements AccesoADAO {
             } else {
                 return null;
             }
+            conexion.desConectarBD();
         } catch (SQLException ex) {
             MsmError = "MI mensaje propio";
             throw new Mierror(MsmError, ex);

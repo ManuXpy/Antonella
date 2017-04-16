@@ -43,8 +43,7 @@ public class AccesoAServlet extends HttpServlet {
 
         alumnoDTO.setCi_alumno(request.getParameter("ci"));
         alumnoDTO.setFecha_nac_alumno(request.getParameter("fecha"));
-       
-     
+
 
         if (acceso.verificarUsuario(alumnoDTO)) {
             HttpSession sessionActiva = request.getSession();

@@ -12,7 +12,7 @@ import DTO.MateriasDTO;
  * @author !mX
  */
 public interface MateriasDAO extends CRUDGenerico<MateriasDTO> {
-    
+
      String ComboCarreras();
 
 }

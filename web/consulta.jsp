@@ -42,7 +42,7 @@
                 <div class="panel-body">
 
                 </div>
-            </div>    
+            </div>
 
             <div class="col-md-4" style="display:none">
                 <input id="codigo" name="codigo" type="text" class="form-control input-md">

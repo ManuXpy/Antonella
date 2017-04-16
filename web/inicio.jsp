@@ -30,7 +30,7 @@
             .table-responsive {height: auto; max-width: 1080px;}
             .resaltar{background-color:#FF0;}
         </style>
-        <title>Sistema Calificaciones UPE</title>
+        <title>Sistema Calificaciones</title>
     </head>
     <body>
         <%@ include file="menu.jsp"%>
@@ -41,7 +41,7 @@
                     <legend>Sitema Calificaciones</legend>
                     <ol class="breadcrumb">
                         <li class="active">
-                            <span>Bienvenido  ${sessionScope.sessionON}</span> 
+                            <span>Bienvenido  ${sessionScope.sessionON}</span>
                         </li>
                     </ol>
                 </fieldset>
@@ -57,7 +57,7 @@
                                 <div class="col-xs-3">
                                     <span class="step size-40"><i class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></i></span>
                                 </div>
-                                <div class="col-xs-9 text-right">                                    
+                                <div class="col-xs-9 text-right">
                                     <div> <span id="alumno" style="font-size:25px"></span> </div>
                                     <div>Alumnos</div>
                                 </div>
@@ -118,7 +118,7 @@
                 </div>
             </div>
 
-            <!-- Inicio Buscador y tabla  -->     
+            <!-- Inicio Buscador y tabla  -->
 
             <div class="input-group">
                 <span class="input-group-addon">Buscar</span>
@@ -140,18 +140,18 @@
                             </thead>
                             <tbody id="myTable" class="buscar">
                             </tbody>
-                        </table>  
+                        </table>
                         <nav>
                             <ul class="pager">
                                 <li class="previous">
                                     <a href="#">
-                                        <span aria-hidden="true">&larr;</span> 
+                                        <span aria-hidden="true">&larr;</span>
                                         Anterior
                                     </a>
                                 </li>
                                 <li class="next">
                                     <a href="#">
-                                        Siguiente 
+                                        Siguiente
                                         <span aria-hidden="true">&rarr;</span>
                                     </a>
                                 </li>

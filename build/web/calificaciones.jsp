@@ -26,7 +26,7 @@
         <script src="Recursos/js/bootstrap.js"></script>
         <script src="Recursos/js/jquery.backstretch.min.js"></script>
         <script src="Recursos/js/bootstrapValidator.js"></script>
-        <script src="Recursos/js/ImagenFondo.js"></script> 
+        <script src="Recursos/js/ImagenFondo.js"></script>
         <script src="Recursos/js/bootstrap-datepicker.js"></script>
         <script src="Operaciones/OperacionesPuntajes.js"></script>
         <script src="Operaciones/BuscadorGanericoModal.js"></script>
@@ -52,9 +52,9 @@
                     <!-- Form Name -->
                     <legend>Calificaciones</legend>
                     <!-- Panel Alumno -->
-                    <div class="panel panel-primary"> 
+                    <div class="panel panel-primary">
                         <div class="panel-heading">Datos Alumno</div>
-                        <div class="panel-body"> 
+                        <div class="panel-body">
                             <div class="col-xs-12 col-xs-12 input-group input-group-sm" >
                                 <span class="input-group-addon" id="basic-addon1">ID Calificacion</span>
                                 <input id="codigo" name="codigo" type="text" class="form-control" aria-describedby="basic-addon1" placeholder="Ingrese ID o Presione F4" onKeyPress="return soloNumeros(event)"
@@ -146,7 +146,7 @@
                                                if (event.keyCode === 13) {
                                                    agregar();
                                                }
-                                       ">      
+                                       ">
                             </div>
                         </div>
                     </div>
@@ -182,7 +182,7 @@
                 <span class="label label-default">* F4 para utilizar el buscador</span>
             </div>
 
-            <div class="table-responsive"style="display:none"> 
+            <div class="table-responsive"style="display:none">
                 <table class="table table-hover table-condensed" id="miTabla" onclick="recuperar()" >
                     <thead>
                         <tr class="info">
@@ -194,7 +194,7 @@
                     <tbody class="buscar">
                     </tbody>
                 </table>
-            </div> 
+            </div>
 
             <script>
                 document.getElementById('INSERTAR').disabled = true;

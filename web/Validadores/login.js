@@ -18,11 +18,11 @@ $("#txtPassword").on('change',function() {
 
 $(".reveal").on('click',function() {
     var $pwd = $("#txtPassword");
-    if ($pwd.attr('type') === 'password') 
+    if ($pwd.attr('type') === 'password')
 		{
         $pwd.attr('type', 'text');
-    } 
-		else 
+    }
+		else
 		{
         $pwd.attr('type', 'password');
     }

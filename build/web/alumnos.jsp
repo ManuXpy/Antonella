@@ -11,6 +11,9 @@
         if (sessionActiva.getAttribute("sessionON") == null) {
             response.sendRedirect("/Calificaciones/login.html");
         }
+        if (sessionActiva.getAttribute("sessionROL") != "1") {
+            response.sendRedirect("/Calificaciones/error403.jsp");
+        }
     %>
     <head>
         <meta http-equiv="refresh" content="${pageContext.session.maxInactiveInterval};url=login-caducado.jsp">
@@ -24,7 +27,7 @@
         <script src="Recursos/js/bootstrap.js"></script>
         <script src="Recursos/js/jquery.backstretch.min.js"></script>
         <script src="Recursos/js/bootstrapValidator.js"></script>
-        <script src="Recursos/js/ImagenFondo.js"></script> 
+        <script src="Recursos/js/ImagenFondo.js"></script>
         <script src="Recursos/js/bootstrap-datepicker.js"></script>
         <script src="Operaciones/OperacionesAlumnos.js"></script>
         <script src="Recursos/js/Buscador.js"></script>
@@ -45,7 +48,7 @@
                     <legend>Alumnos</legend>
                     <!-- Text input-->
                     <div class="form-group">
-                        <label class="col-md-1 control-label" for="codigo">AlumnoID*</label>  
+                        <label class="col-md-1 control-label" for="codigo">AlumnoID*</label>
                         <div class="col-md-4">
                             <input id="codigo" name="codigo" type="text" placeholder="ID del Alumno" class="form-control input-md" required=""  autofocus onkeydown="
                                     if (event.keyCode === 13) {
@@ -56,7 +59,7 @@
                         <span class="label label-default">Validar</span>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-1 control-label" for="codigo">Codigo*</label>  
+                        <label class="col-md-1 control-label" for="codigo">Codigo*</label>
                         <div class="col-md-4">
                             <input id="codigo2" name="codigo2" type="text" placeholder="Codigo Interno del Alumno" class="form-control input-md" required="" onkeydown="
                                     if (event.keyCode === 13) {
@@ -68,19 +71,19 @@
 
                     </div>
                     <div class="form-group">
-                        <label class="col-md-1 control-label" for="Nombre">Nombre</label>  
+                        <label class="col-md-1 control-label" for="Nombre">Nombre</label>
                         <div class="col-md-4">
                             <input id="nonbre" name="nonbre" type="text" placeholder="Ingrese el nombre" class="form-control input-md" required="" >
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-1 control-label" for="Apellido">Apellido</label>  
+                        <label class="col-md-1 control-label" for="Apellido">Apellido</label>
                         <div class="col-md-4">
                             <input id="apellido" name="apellido" type="text" placeholder="Ingrese el apellido" class="form-control input-md" required="">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-1 control-label" for="Cedula">Cedula*</label>  
+                        <label class="col-md-1 control-label" for="Cedula">Cedula*</label>
                         <div class="col-md-4">
                             <input id="cedula" name="cedula" type="text" placeholder="Ingrese cedula de identidad" class="form-control input-md" required="">
                         </div>
@@ -99,8 +102,7 @@
                     <!-- Select Basic -->
                     <select id="usuario" name="usuario" class="form-control"  style="display:none">
                         <option value="${sessionScope.sessionON}">${sessionScope.sessionON}</option>
-                    </select> 
-                    
+                    </select>
                 </fieldset>
             </form>
             <!-- Botones  -->
@@ -132,18 +134,18 @@
                             </thead>
                             <tbody id="myTable" class="buscar">
                             </tbody>
-                        </table>  
+                        </table>
                         <nav>
                             <ul class="pager">
                                 <li class="previous">
                                     <a href="#">
-                                        <span aria-hidden="true">&larr;</span> 
+                                        <span aria-hidden="true">&larr;</span>
                                         Anterior
                                     </a>
                                 </li>
                                 <li class="next">
                                     <a href="#">
-                                        Siguiente 
+                                        Siguiente
                                         <span aria-hidden="true">&rarr;</span>
                                     </a>
                                 </li>
@@ -151,7 +153,7 @@
                         </nav>
                     </div>
                 </div>
-            </div>  
+            </div>
         </section>
         <script>
             document.getElementById('INSERTAR').disabled = true;

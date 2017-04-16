@@ -28,7 +28,6 @@
                 </div><br>
                 <button class="btn btn-sm btn-info" onclick="listaBuscadores(1)"> Buscador ID Calificaciones</button>
                 <button class="btn btn-sm btn-info" onclick="listaBuscadores(2)"> Buscador ID Alumno</button>
-               
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
