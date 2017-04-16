@@ -15,6 +15,7 @@
 
 * falta terminar agregar usuarios nuevos para poder usar el sistema
 * falta codificar combo dependiente (calificaciones.jsp)
-* falta terminar paginador de buscador Generico (modal)
+* falta terminar de codificar el paginador del buscador Generico (modal)
 
-### GNU General Public License v3.0
+### [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
+
