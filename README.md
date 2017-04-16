@@ -9,7 +9,7 @@
 * [jQuery](https://jquery.com/)
 * [HTML5](https://www.w3schools.com/html/)
 * [CSS3](https://www.w3schools.com/css/)
-* Java - BackEnd
+* JavaEE - BackEnd
 
 ### Falta terminar
 
