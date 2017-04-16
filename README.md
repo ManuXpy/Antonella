@@ -1,6 +1,6 @@
 # Sistema de Calificaciones
 
- Sistema de consultas de calificaciones para centros educativos donde clasificas el curso/carrera con sus respectivas materias/asignaturas 
+ Sistema de consultas de calificaciones para centros educativos 
 
 ## Tecnologias
 
