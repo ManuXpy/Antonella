@@ -1,16 +1,6 @@
 # Sistema de Calificaciones
 
- Sistema de consultas de calificaciones para centros educativos
- 
- _Administracion_
- 
- ![Login](http://i.imgur.com/NS4YZWy.jpg)
- ![inicio](http://i.imgur.com/8Wbm2hZ.jpg)
- 
- _Alumno_
-  ![Login](http://i.imgur.com/JuAkxKk.jpg)
-  ![Consulta](http://i.imgur.com/VRNxWkI.jpg)
- 
+ Sistema de consultas de calificaciones para centros educativos donde clasificas el curso/carrera con sus respectivas materias/asignaturas 
 
 ## Tecnologias
 
@@ -19,6 +9,16 @@
 * [HTML5](https://www.w3schools.com/html/)
 * [CSS3](https://www.w3schools.com/css/)
 * JavaEE - BackEnd
+
+ ## _Administracion_
+ 
+ ![Login](http://i.imgur.com/NS4YZWy.jpg)
+ ![inicio](http://i.imgur.com/8Wbm2hZ.jpg)
+ 
+ ## _Alumno_
+ 
+  ![Login](http://i.imgur.com/JuAkxKk.jpg)
+  ![Consulta](http://i.imgur.com/VRNxWkI.jpg)
 
 ## Falta terminar
 
