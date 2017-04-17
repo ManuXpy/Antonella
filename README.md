@@ -9,7 +9,7 @@
 * [HTML5](https://www.w3schools.com/html/)
 * [CSS3](https://www.w3schools.com/css/)
 * [Javascript](https://www.javascript.com/)
-* JavaEE - BackEnd
+* Java
 
  ## _Administracion_
  
