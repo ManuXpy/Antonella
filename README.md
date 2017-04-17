@@ -23,7 +23,7 @@
 
 ## Falta terminar
 
-* falta terminar agregar usuarios nuevos para poder usar el sistema
+* falta terminar agregar prigramar agregar usuarios
 * falta codificar combo dependiente (calificaciones.jsp)
 * falta terminar de codificar el paginador del buscador Generico (modal)
 
